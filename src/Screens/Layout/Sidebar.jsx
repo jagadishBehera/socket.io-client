@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import SidebarsContent from './SidebarsContent';
-import { GiCash, GiWaterTank } from "react-icons/gi";
+import {  GiWaterTank } from "react-icons/gi";
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {

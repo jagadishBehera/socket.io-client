@@ -1,10 +1,7 @@
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
-import { RiFacebookCircleFill } from "react-icons/ri";
-import Tostify from "../Common/Tostify";
-import { toast } from "react-toastify";
-import lgnIllustrator from "../../Assets/Login/lgnIll.png";
+// import Tostify from "../Common/Tostify";
+// import { toast } from "react-toastify";
+// import lgnIllustrator from "../../Assets/Login/lgnIll.png";
 // import logo from "../../Assets/Logos/AudizoneLogo.png";
 import logo from "../../Assets/Logos/logo1.webp";
 import lgnBg from "../../Assets/Login/bg.png";
@@ -17,22 +14,22 @@ const Login = () => {
     navigate("/admin/dashboard");
   };
 
-  const goToSignUP = () => {
-    navigate("/sign-up");
-  };
+  // const goToSignUP = () => {
+  //   navigate("/sign-up");
+  // };
 
-  const tostifyErr = (msg) => {
-    toast.error(msg, {
-      position: "top-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
-  };
+  // const tostifyErr = (msg) => {
+  //   toast.error(msg, {
+  //     position: "top-center",
+  //     autoClose: 3000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: "colored",
+  //   });
+  // };
 
   return (
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">

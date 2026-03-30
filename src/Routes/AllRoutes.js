@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 import Dashboard from "../Screens/Admin/Dashboard";
 import Login from "../Screens/Auth/Login";
 import SignUp from "../Screens/Auth/SignUp";
