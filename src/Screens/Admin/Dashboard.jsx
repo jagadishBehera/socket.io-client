@@ -186,15 +186,19 @@ const Dashboard = () => {
           <div className="mt-4 flex items-center gap-2">
             <div
               className={`w-2 h-2 rounded-full ${
-                pressure > 3.5 ? "bg-red-500" : pressure > 2.5 ? "bg-green-500" : "bg-yellow-500"
+                pressure > 3.5
+                  ? "bg-red-500"
+                  : pressure > 2.5
+                    ? "bg-green-500"
+                    : "bg-yellow-500"
               } animate-pulse`}
             />
             <span className="text-xs text-gray-500">
               {pressure > 3.5
                 ? "High Pressure"
                 : pressure > 2.5
-                ? "Normal"
-                : "Low Pressure"}
+                  ? "Normal"
+                  : "Low Pressure"}
             </span>
           </div>
         </motion.div>
@@ -216,7 +220,7 @@ const Dashboard = () => {
                 {/* Water Level */}
                 <motion.div
                   className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t ${getWaterLevelColor(
-                    waterLevel
+                    waterLevel,
                   )} transition-all duration-700 ease-out`}
                   style={{ height: `${waterLevel}%` }}
                   animate={{
@@ -264,7 +268,9 @@ const Dashboard = () => {
                 {/* Tank Label */}
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                    <span className="text-xs font-medium text-gray-600">ESR-1000</span>
+                    <span className="text-xs font-medium text-gray-600">
+                      ESR-1000
+                    </span>
                   </div>
                 </div>
               </div>
@@ -302,7 +308,9 @@ const Dashboard = () => {
                     </AnimatePresence>
                   </div>
                   <div className="flex items-center justify-center gap-1 mt-2">
-                    <div className={`w-1.5 h-1.5 rounded-full ${flow ? "bg-green-500" : "bg-gray-300"}`} />
+                    <div
+                      className={`w-1.5 h-1.5 rounded-full ${flow ? "bg-green-500" : "bg-gray-300"}`}
+                    />
                     <span className="text-xs text-gray-500">INLET</span>
                   </div>
                 </div>
@@ -343,7 +351,9 @@ const Dashboard = () => {
                   </div>
                   <div className="flex items-center justify-center gap-1 mt-2">
                     <span className="text-xs text-gray-500">OUTLET</span>
-                    <div className={`w-1.5 h-1.5 rounded-full ${flow ? "bg-blue-500" : "bg-gray-300"}`} />
+                    <div
+                      className={`w-1.5 h-1.5 rounded-full ${flow ? "bg-blue-500" : "bg-gray-300"}`}
+                    />
                   </div>
                 </div>
               </div>
@@ -369,7 +379,9 @@ const Dashboard = () => {
                     }}
                   />
                   <div>
-                    <h3 className="text-sm font-medium text-gray-700">System Status</h3>
+                    <h3 className="text-sm font-medium text-gray-700">
+                      System Status
+                    </h3>
                     <span className="text-xs text-gray-500">
                       {flow ? "Active Flow" : "Standby Mode"}
                     </span>
@@ -410,7 +422,9 @@ const Dashboard = () => {
               className="bg-white/60 backdrop-blur-sm rounded-xl p-5 shadow-sm border border-gray-100"
             >
               <div className="flex justify-between items-center mb-3">
-                <span className="text-sm font-medium text-gray-700">Water Level</span>
+                <span className="text-sm font-medium text-gray-700">
+                  Water Level
+                </span>
                 <span className="text-sm font-semibold text-blue-600">
                   {waterLevel.toFixed(0)}%
                 </span>

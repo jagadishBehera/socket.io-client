@@ -21,7 +21,7 @@ const AdminProfileDropDown = () => {
     const handleLogout = () => {
         profileDropdownClose();
         localStorage.clear();
-        navigate('/login');
+        navigate('/');
     };
 
     return (

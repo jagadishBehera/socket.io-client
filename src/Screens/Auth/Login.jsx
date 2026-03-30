@@ -5,7 +5,8 @@ import { RiFacebookCircleFill } from "react-icons/ri";
 import Tostify from "../Common/Tostify";
 import { toast } from "react-toastify";
 import lgnIllustrator from "../../Assets/Login/lgnIll.png";
-import logo from "../../Assets/Logos/AudizoneLogo.png";
+// import logo from "../../Assets/Logos/AudizoneLogo.png";
+import logo from "../../Assets/Logos/logo1.webp";
 import lgnBg from "../../Assets/Login/bg.png";
 import LeftSection from "../../Components/Login/LeftSection";
 
