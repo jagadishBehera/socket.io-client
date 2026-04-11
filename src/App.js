@@ -4,6 +4,7 @@ import { authRoutes, userRoutes } from './Routes/AllRoutes';
 import NonAuthLayout from './Routes/middleware/NonAuthLayout';
 import AuthLayout from './Routes/middleware/AuthLayout';
 import Layout from './Screens/Layout/Layout';
+import "sweetalert2/dist/sweetalert2.min.css";
 
 const App = () => {
   return (
