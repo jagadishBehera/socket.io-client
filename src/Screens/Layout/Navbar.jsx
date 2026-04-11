@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
-import { FaBell } from 'react-icons/fa';
-import { IoMdNotifications } from 'react-icons/io';
+// import { FaBell } from 'react-icons/fa';
+// import { IoMdNotifications } from 'react-icons/io';
 import { MdMarkEmailUnread } from 'react-icons/md';
 import AdminProfileDropDown from '../../Components/Admin/AdminProfileDropDown';
 import NotificationBell from '../../Components/Admin/Notifications/NotificationBell';
@@ -10,7 +10,7 @@ const Navbar = ({ toggleSidebar }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   // Mock notification counts (replace with API later)
-  const [notifications, setNotifications] = useState(5);
+  // const [notifications, setNotifications] = useState(5);
   const [messages, setMessages] = useState(2);
 
   useEffect(() => {
