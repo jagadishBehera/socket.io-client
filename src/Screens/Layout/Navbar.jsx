@@ -11,7 +11,7 @@ const Navbar = ({ toggleSidebar }) => {
 
   // Mock notification counts (replace with API later)
   // const [notifications, setNotifications] = useState(5);
-  const [messages, setMessages] = useState(2);
+  const [messages] = useState(2);
 
   useEffect(() => {
     const timer = setInterval(() => {
