@@ -150,7 +150,7 @@ function Master() {
     try {
       //  API CALL (DELETE)
       await axios.delete(
-        `${process.env.REACT_APP_API_URL}pgc-api/iot/${row._id}`
+        `${process.env.REACT_APP_API_URL}/pgc-api/iot/${row._id}`
       );
       //  update UI after success
       setData((prev) => prev.filter((item) => item._id !== row._id));
