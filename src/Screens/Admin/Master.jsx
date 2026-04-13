@@ -23,7 +23,7 @@ function Master() {
       try {
         setLoading(true);
 
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}pgc-api/iot/all`)
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/pgc-api/iot/all`)
         setData(res.data?.data || []);
       } catch (err) {
         console.log(err);
