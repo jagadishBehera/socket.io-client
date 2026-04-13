@@ -107,7 +107,7 @@ const EfFlowStation = () => {
     return () => {
       socket.disconnect();
     };
-  }, []);
+  }, [SOCKET_URL]);
 
   useEffect(() => {
     const animateRotor = () => {
